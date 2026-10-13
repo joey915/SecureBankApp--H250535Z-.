@@ -8,34 +8,34 @@ After a user logs in, the user can also deposit, withdraw, do balance enquiries 
 Student Details: Joel Matuso H250535Z
 
 Features;
-**User Authentication**
+**User Authentication**:
 User login using username, account number, and password.
 Password hashing to avoid storing passwords in plain text.
 Generic error messages for invalid login credentials.
 Collects all login credentials before displaying an authentication failure.
 Failed-login handling.
 
-**Account Management**
+**Account Management**:
 Creation of new bank accounts.
 Automatic generation of unique account numbers.
 Viewing account balances.
 Linking user details to their bank accounts.
 
-**Banking Transactions**
+**Banking Transactions**:
 Depositing money into an account.
 Withdrawing money from an account.
 Prevention of withdrawals that exceed the available balance.
 Recording transaction details.
 Maintaining transaction history.
 
-**File-Based Data Persistence**
+**File-Based Data Persistence**:
 Storing user information in users.txt.
 Storing account information in accounts.txt.
 Storing transaction records in transactions.txt.
 Loading saved data when the application starts.
 Saving changes so that account information and transactions persist between sessions.
 
-**Data Encryption**
+**Data Encryption**:
 Implemented AES encryption using GCM mode (AES-GCM) to protect stored data.
 Encrypting user, account, and transaction data files.
 Using a separate encryption.key file to store the encryption key.
@@ -43,23 +43,23 @@ Using a 256-bit encryption key.
 Using a 12-byte initialization vector (IV).
 Using a 128-bit authentication tag to help detect unauthorized changes to encrypted data.
 
-**Password Security**
+**Password Security**:
 Using password hashing instead of storing passwords as readable text.
 Verifying passwords during login.
 Separating password-hashing functionality into PasswordHasher.java.
 
-**Input Validation**
+**Input Validation**:
 Validating user input to reduce invalid or unexpected entries.
 Validating transaction amounts.
 Checking transaction conditions before processing deposits and withdrawals.
 
-**File Security**
+**File Security**:
 Applying Windows file attributes to hide encryption.key.
 Configuring file permissions using Windows access-control commands.
 Separating encryption functionality into EncryptionUtil.java.
 Separating file operations into FileManager.java.
 
-**Object-Oriented Programming**
+**Object-Oriented Programming**:
 Using separate Java classes to organize the application.
 Main.java — application entry point and console interaction.
 User.java — user information.
